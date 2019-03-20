@@ -30,3 +30,13 @@
 .menu-nav .menu-list>li>a:hover, .menu-nav .menu-list>li>a:focus, .menu-nav .menu-list>li.dropdown.open>a {
     color: #F8694A;
 }
+
+  /* new homepage custom styles */
+  .menu-items{
+      width:325px;
+  }
+
+  .fa-2x{
+
+  }
+  

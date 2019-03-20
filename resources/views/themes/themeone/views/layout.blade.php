@@ -18,8 +18,11 @@
 @endif
 	<!-- header -->
 
-		
+    
+          @include('common.header_five')
+          <hr/>
         	@include('common.header_two')
+        	
             @if(Request::path() == 'index' or Request::path() == '/')
             <section class="carousel-content" style="margin:15px 0">
               <div class="container">
