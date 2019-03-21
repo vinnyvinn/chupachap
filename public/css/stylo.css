@@ -36,7 +36,81 @@
       width:325px;
   }
 
-  .fa-2x{
+  .mini-header{
+    background-color: #E7E7E7;
+}
 
-  }
-  
+.adds-header{
+    background-color: #cecece;
+    border-bottom: 2px solid  #DAA520;
+}
+
+.month-products .card{
+    border: none;
+}
+
+/* additional custom styles */
+
+/* menu area */
+
+.navbar{
+    padding: 0;
+}
+
+.navbar-brand {
+    display: inline-block;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    margin-right: 0rem;
+    font-size: 1.25rem;
+    line-height: inherit;
+    white-space: nowrap;
+}
+
+.navbar-brand > img{
+    max-width: 240px;
+}
+
+.menu-logo-container{
+    padding: 20px 0;
+}
+
+.menu-items-container{
+    width: 80%;
+    float: right;
+}
+
+.menu-item-icon{
+    padding-top:.6rem;
+}
+
+.menu-item-label{
+    font-size: .65rem;
+    letter-spacing: .11em;
+    text-transform: uppercase;
+    padding-top: .1rem
+}
+
+.menu-item-link{
+    color:#c0c0c0;
+    text-decoration: none;
+}
+
+.menu-item-link:hover{
+    color:#fff;
+    text-decoration: none;
+}
+
+.menu-item-form-container{
+
+}
+
+.menu-search-button {
+    color: #561413 !important;
+    background-color: #FFF !important;
+    border-color: #FFF !important;
+}
+
+.menu-item-form-container input[type="text"]{
+    border: none;
+}

@@ -20,26 +20,26 @@
 
     
           <?php echo $__env->make('common.header_five', \Illuminate\Support\Arr::except(get_defined_vars(), array('__data', '__path')))->render(); ?>
-          <hr/>
-        	<?php echo $__env->make('common.header_two', \Illuminate\Support\Arr::except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+        	
         	
             <?php if(Request::path() == 'index' or Request::path() == '/'): ?>
-            <section class="carousel-content" style="margin:15px 0">
-              <div class="container">
-                <div class="row">
-                 <div class="col-3">
-                  <?php echo $__env->make('plugins.top_sellers', \Illuminate\Support\Arr::except(get_defined_vars(), array('__data', '__path')))->render(); ?>
-                 </div>
-                 <div class="col-6 p-0"> <?php echo $__env->make('common.carousel', \Illuminate\Support\Arr::except(get_defined_vars(), array('__data', '__path')))->render(); ?> </div>
-                 <div class="col-3">
-                    <?php echo $__env->make('plugins.top_sellers_week', \Illuminate\Support\Arr::except(get_defined_vars(), array('__data', '__path')))->render(); ?>
-                 </div>
+
+
+            <div class="container mt-3">
+              <div class="row">
+                <div class="col-sm-3">
+                  <div class="row mb-2"><a href=""><img src="https://www.thewhiskyexchange.com/media/rtwe/uploads/banners/1104_Small.jpg?v=435375865856" /></a></div>
+                  <div class="row"><a href=""><img src="https://www.thewhiskyexchange.com/media/rtwe/uploads/banners/1104_Small.jpg?v=435375865856" /></a></div>
+                </div>
+                <div class="col-sm-6"><a href=""><img src="https://www.thewhiskyexchange.com/media/rtwe/uploads/banners/1073_Large.jpg?v=435407423148" /></a></div>
+                <div class="col-sm-3">
+                  <div class="row mb-2"><a href=""><img src="https://www.thewhiskyexchange.com/media/rtwe/uploads/banners/1104_Small.jpg?v=435375865856" /></a></div>
+                  <div class="row"><a href=""><img src="https://www.thewhiskyexchange.com/media/rtwe/uploads/banners/1104_Small.jpg?v=435375865856" /></a></div>
                 </div>
               </div>
-            </section>
-            <?php endif; ?>
-           
-            <!-- ./end of header -->
+            </div>
+            <?php endif; ?>  
+            <!-- ./end of image banners -->
 
 
 

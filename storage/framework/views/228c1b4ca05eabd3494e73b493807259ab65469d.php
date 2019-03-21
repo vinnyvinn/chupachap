@@ -64,7 +64,7 @@
     <div class="row">
     	
         <div class="col-12">
-            <p> © <?= now()->year ?> Vintage Wines. <a href="<?php echo e(url('page?name=privacy-policy')); ?>"><?php echo app('translator')->getFromJson('website.Privacy'); ?></a> · <a href="#"><?php echo app('translator')->getFromJson('website.Terms'); ?></a> </p>
+            <p> © <?= now()->year ?> ChupaChap. <a href="<?php echo e(url('page?name=privacy-policy')); ?>"><?php echo app('translator')->getFromJson('website.Privacy'); ?></a> · <a href="#"><?php echo app('translator')->getFromJson('website.Terms'); ?></a> </p>
         </div>
         <div class="floating-top"><a href="#" class="fa fa-angle-up"></a></div>
     </div>

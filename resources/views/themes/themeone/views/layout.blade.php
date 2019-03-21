@@ -20,26 +20,26 @@
 
     
           @include('common.header_five')
-          <hr/>
-        	@include('common.header_two')
+        	{{-- @include('common.header_two') --}}
         	
             @if(Request::path() == 'index' or Request::path() == '/')
-            <section class="carousel-content" style="margin:15px 0">
-              <div class="container">
-                <div class="row">
-                 <div class="col-3">
-                  @include('plugins.top_sellers')
-                 </div>
-                 <div class="col-6 p-0"> @include('common.carousel') </div>
-                 <div class="col-3">
-                    @include('plugins.top_sellers_week')
-                 </div>
+
+
+            <div class="container mt-3">
+              <div class="row">
+                <div class="col-sm-3">
+                  <div class="row mb-2"><a href=""><img src="https://www.thewhiskyexchange.com/media/rtwe/uploads/banners/1104_Small.jpg?v=435375865856" /></a></div>
+                  <div class="row"><a href=""><img src="https://www.thewhiskyexchange.com/media/rtwe/uploads/banners/1104_Small.jpg?v=435375865856" /></a></div>
+                </div>
+                <div class="col-sm-6"><a href=""><img src="https://www.thewhiskyexchange.com/media/rtwe/uploads/banners/1073_Large.jpg?v=435407423148" /></a></div>
+                <div class="col-sm-3">
+                  <div class="row mb-2"><a href=""><img src="https://www.thewhiskyexchange.com/media/rtwe/uploads/banners/1104_Small.jpg?v=435375865856" /></a></div>
+                  <div class="row"><a href=""><img src="https://www.thewhiskyexchange.com/media/rtwe/uploads/banners/1104_Small.jpg?v=435375865856" /></a></div>
                 </div>
               </div>
-            </section>
-            @endif
-           
-            <!-- ./end of header -->
+            </div>
+            @endif  
+            <!-- ./end of image banners -->
 
 
 
