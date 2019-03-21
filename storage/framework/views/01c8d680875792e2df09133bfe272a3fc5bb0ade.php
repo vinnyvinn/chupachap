@@ -37,7 +37,7 @@
                                         </div>
 
                                         <div>
-                                            <h4 class="item-name mb-1 cart-item-color"><?php echo e($cart_data->products_name); ?></h4>
+                                            <h5 class="item-name mb-1 cart-item-color"><?php echo e($cart_data->products_name); ?></h5>
                                             <span class="text-muted"><?php echo app('translator')->getFromJson('website.Qty'); ?>&nbsp;:&nbsp;<?php echo e($cart_data->customers_basket_quantity); ?></span>
                                             <span class="cart-item-color"> <?php echo e($web_setting[19]->value); ?> <?php echo e($cart_data->final_price*$cart_data->customers_basket_quantity); ?></span>
                                         </div>

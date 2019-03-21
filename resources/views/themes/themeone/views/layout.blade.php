@@ -10,6 +10,14 @@
 
 <!-- ./end of meta -->
 
+<style>
+
+body{
+  /* background-image:url("{{ asset('images/backgrounds/light-brick.jpg') }}") */
+}
+  
+</style>
+
 <!--dir="rtl"-->
 @if(Request::path() == 'index' or Request::path() == '/')
 <body class="home">
@@ -19,8 +27,9 @@
 	<!-- header -->
 
     
+          {{-- @include('common.header_six') --}}
           @include('common.header_five')
-          @include('common.header_two')
+          {{-- @include('common.header_two') --}}
         	{{-- @include('common.header_two') --}}
         	
             @if(Request::path() == 'index' or Request::path() == '/')

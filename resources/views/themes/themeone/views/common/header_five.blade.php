@@ -8,7 +8,6 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbarTogglerChupaChap">
 
-
                         <div class="row" style="width:100%;">
                             <div class="col-sm-12 col-md-4 offset-md-4 text-center">
                                 <a class="navbar-brand" href="{{ URL::to('/')}}">

@@ -38,7 +38,6 @@
                 @endif
 
                 <li class="cart-header dropdown nav-item head-cart-content" id="shopping_button">
-
                     @include('cartButton')
                 </li>
                 <li class="wishlist-header">

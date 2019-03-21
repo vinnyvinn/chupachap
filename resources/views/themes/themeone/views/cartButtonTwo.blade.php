@@ -37,7 +37,7 @@
                                         </div>
 
                                         <div>
-                                            <h4 class="item-name mb-1 cart-item-color">{{$cart_data->products_name}}</h4>
+                                            <h5 class="item-name mb-1 cart-item-color">{{$cart_data->products_name}}</h5>
                                             <span class="text-muted">@lang('website.Qty')&nbsp;:&nbsp;{{$cart_data->customers_basket_quantity}}</span>
                                             <span class="cart-item-color"> {{$web_setting[19]->value}} {{$cart_data->final_price*$cart_data->customers_basket_quantity}}</span>
                                         </div>

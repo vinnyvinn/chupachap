@@ -38,7 +38,6 @@
                 <?php endif; ?>
 
                 <li class="cart-header dropdown nav-item head-cart-content" id="shopping_button">
-
                     <?php echo $__env->make('cartButton', \Illuminate\Support\Arr::except(get_defined_vars(), array('__data', '__path')))->render(); ?>
                 </li>
                 <li class="wishlist-header">

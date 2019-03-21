@@ -10,6 +10,14 @@
 
 <!-- ./end of meta -->
 
+<style>
+
+body{
+  /* background-image:url("<?php echo e(asset('images/backgrounds/light-brick.jpg')); ?>") */
+}
+  
+</style>
+
 <!--dir="rtl"-->
 <?php if(Request::path() == 'index' or Request::path() == '/'): ?>
 <body class="home">
@@ -19,8 +27,9 @@
 	<!-- header -->
 
     
+          
           <?php echo $__env->make('common.header_five', \Illuminate\Support\Arr::except(get_defined_vars(), array('__data', '__path')))->render(); ?>
-          <?php echo $__env->make('common.header_two', \Illuminate\Support\Arr::except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+          
         	
         	
             <?php if(Request::path() == 'index' or Request::path() == '/'): ?>
