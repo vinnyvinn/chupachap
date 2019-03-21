@@ -101,10 +101,6 @@
     text-decoration: none;
 }
 
-.menu-item-form-container{
-
-}
-
 .menu-search-button {
     color: #561413 !important;
     background-color: #FFF !important;
@@ -114,3 +110,222 @@
 .menu-item-form-container input[type="text"]{
     border: none;
 }
+
+/* mini menu */
+.mini-menu-link{
+    text-decoration: none;
+    text-transform: uppercase;
+    color:#561413;
+    display: block;
+}
+
+.mini-menu-link:hover{
+    color:#FFF;
+    background-color: #561413;
+}
+
+/* mini menu mega menu */
+.mega-menu{
+    overflow: hidden;
+}
+
+.mega-menu-content{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 100%;
+    left: 0;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 100;
+}
+
+.mega-menu:hover .mega-menu-content {
+    display: block;
+}
+
+.icon-menga-menu ul li a{
+    width: 100%;
+    padding: 14px 22px;
+    float: left;
+    text-decoration: none;
+    color: #561413;
+    font-size: 16px;
+    border-bottom: 1px solid gray;
+    white-space: nowrap;
+    position: relative;
+    overflow: hidden;
+    -o-transition: color .2s linear, background .2s linear;
+    -moz-transition: color .2s linear, background .2s linear;
+    -webkit-transition: color .2s linear, background .2s linear;
+    transition: color .2s linear, background .2s linear
+}
+
+.icon-menga-menu ul li a:hover{
+    background: #561413;
+    color:#fff;
+}
+
+
+/* praise menu */
+
+.praise-link{
+    display: block;
+    padding: 6px 15px;
+    color: #666;
+    text-decoration: none;
+}
+
+.praise-link:hover{
+    background-color: #dcdcdc;
+    color: #666;
+    text-decoration: none;
+}
+
+.praise-link-text{
+ line-height: .6;
+}
+
+/* body */
+/* discover section */
+
+.highlight-title{
+    overflow: hidden;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.highlight-title:before,
+.highlight-title:after {
+    border-top: 1px solid #666;
+    content: "";
+    display: inline-block;
+    height: .1em;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+    margin-bottom: .15em;
+}
+
+.highlight-title:before {
+    right: 0.5em;
+    margin-left: -50%;
+}
+
+.highlight-title:after {
+    left: 0.5em;
+    margin-right: -50%;
+}
+
+.discover-link{
+    display: block;
+    box-sizing: border-box;
+    padding: .5rem;
+    text-decoration: none;
+}
+
+.discover-link:hover{
+    background: rgba(86, 20, 19, .1);
+    color:#FFF;
+    text-decoration: none;
+}
+
+.discover-icon{
+ color:#561413;
+}
+
+.discover-text{
+    color: rgba(86, 20, 19, .8);
+    font-size: 1.1 rem;
+    font-weight: 600;
+}
+
+/* products of the month text */
+
+.month-product-title{
+    text-transform: uppercase;
+    margin-bottom: 0;
+    font-weight: 600;
+    font-size: 11.2px;
+}
+
+.month-product-link{
+    color:inherit;
+    text-decoration: none;
+}
+
+.month-product-link:hover{
+    color:inherit;
+    text-decoration: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2)
+}
+
+/* trending now section */
+.btn-outline-trending {
+    color: #561413;
+    background-color: transparent;
+    background-image: none;
+    border-color: #561413;
+    text-transform: uppercase;
+}
+
+.btn-outline-trending:hover {
+    color: #FFF;
+    background-color: #561413;
+    background-image: none;
+    border-color: #561413;
+}
+
+/* footer section */
+
+.mail-link{
+    color: #fff;
+    text-decoration: none;
+}
+
+.mail-link:hover{
+    color: #e0b580;
+    text-decoration: none;
+}
+
+.footer-content .single-footer .links-list li a:hover{
+    color: #e0b580;
+    text-decoration: underline;
+}
+
+.footer-content .social-icons li a:hover {
+   text-decoration: none;
+}
+
+/* cart */
+
+.dropdown-cart{
+    min-width:300px;
+    border-radius: 0;
+}
+
+.dropdown-cart .cart-img-thumb{
+    width: 70px;
+  height: 70px;
+  border: 1px solid #ced4da;
+  overflow: hidden;
+}
+
+.cart-item-color{
+    color:#561413;
+}
+
+.delete-cart-product{
+    color:red;
+    text-decoration: none;
+}
+
+.delete-cart-product{
+    color:red;
+    text-decoration: none;
+}
+
+.dropleft .shopping-cart{
+    position:relative;
+    top:40px;
+}
+

@@ -4,32 +4,106 @@
 <section class="site-content">
   <div class="container"> 
 
-    <div class="mt-5">
+    <div class="mt-4">
     <h3 class="highlight-title"><span class="text-uppercase">our highlights</span></h3>
     <div class="row">
-      <div class="col-sm-6 mb-3"><img src="https://www.thewhiskyexchange.com/media/rtwe/uploads/banners/1106_Horizontal.jpg?v=435375860301" /></div>
-      <div class="col-sm-6 mb-3"><img src="https://www.thewhiskyexchange.com/media/rtwe/uploads/banners/1106_Horizontal.jpg?v=435375860301" /></div>
-      <div class="col-sm-6 mb-3"><img src="https://www.thewhiskyexchange.com/media/rtwe/uploads/banners/1106_Horizontal.jpg?v=435375860301" /></div>
-      <div class="col-sm-6 mb-3"><img src="https://www.thewhiskyexchange.com/media/rtwe/uploads/banners/1106_Horizontal.jpg?v=435375860301" /></div>
+      <div class="col"><a href=""><img src="https://www.thewhiskyexchange.com/media/rtwe/uploads/banners/1106_Horizontal.jpg?v=435375860301"/></a></div>
+      <div class="col"><a href=""><img src="https://www.thewhiskyexchange.com/media/rtwe/uploads/banners/1106_Horizontal.jpg?v=435375860301"/></a></div>
+    </div>
+
+    <div class="row mt-3">
+      <div class="col"><a href=""><img src="https://www.thewhiskyexchange.com/media/rtwe/uploads/banners/1104_Small.jpg?v=435375865856" alt="image one" /></a></div>
+      <div class="col"><a href=""><img src="https://www.thewhiskyexchange.com/media/rtwe/uploads/banners/1104_Small.jpg?v=435375865856" alt="image two" /></a></div>
+      <div class="col"><a href=""><img src="https://www.thewhiskyexchange.com/media/rtwe/uploads/banners/1104_Small.jpg?v=435375865856" alt="image two" /></a></div>
+      <div class="col"><a href=""><img src="https://www.thewhiskyexchange.com/media/rtwe/uploads/banners/1104_Small.jpg?v=435375865856" alt="image two" /></a></div>
     </div>
   </div>{{-- our highlights section end --}}
 
       <div class="mt-5">
           <h3 class="highlight-title"><span class="text-uppercase">discover more</span></h3>
           <div class="row mb-3">
-            <div class="col"><a href=""><span><i class="fa fa-glass fa-2x pr-2" aria-hidden="true"></i></span><span>and typesetting industry</span></a></div>
-            <div class="col"><a href=""><span><i class="fa fa-tags fa-2x pr-2" aria-hidden="true"></i></span><span>scrambled it to make a type specimen book</span></a></div>
-            <div class="col"><a href=""><span><i class="fa fa-gift fa-2x pr-2" aria-hidden="true"></i></span><span>Lorem Ipsum is not simply random text</span></a></div>
+            <div class="col">
+              <a href="#" class="discover-link">
+                <span class="discover-icon">
+                  <i class="fa fa-glass fa-2x pr-2" aria-hidden="true">
+                    </i>
+                  </span>
+                  <span class="discover-text">and typesetting industry</span></a>
+                </div>
+            <div class="col">
+              <a href="#" class="discover-link">
+                <span class="discover-icon">
+                  <i class="fa fa-tags fa-2x pr-2" aria-hidden="true">
+                    </i>
+                  </span>
+                  <span class="discover-text">scrambled it to make a type</span></a>
+                </div>
+            <div class="col">
+              <a href="#" class="discover-link">
+                <span class="discover-icon">
+                  <i class="fa fa-gift fa-2x pr-2" aria-hidden="true">
+                    </i>
+                  </span>
+                  <span class="discover-text">Lorem simply rando</span></a>
+                </div>
           </div>
           <div class="row mb-3">
-            <div class="col"><a href=""><span><i class="fa fa-glass fa-2x pr-2" aria-hidden="true"></i></span><span>and typesetry</span></a></div>
-            <div class="col"><a href=""><span><i class="fa fa-tags fa-2x pr-2" aria-hidden="true"></i></span><span>a type specimen book</span></a></div>
-            <div class="col"><a href=""><span><i class="fa fa-gift fa-2x pr-2" aria-hidden="true"></i></span><span>Lorem Ipsumimply random text</span></a></div>
+            <div class="col">
+              <a href="#" class="discover-link">
+                <span class="discover-icon">
+                  <i class="fa fa-glass fa-2x pr-2" aria-hidden="true">
+                    </i>
+                  </span>
+                  <span class="discover-text">and typesetry</span>
+                </a>
+              </div>
+            <div class="col">
+              <a href="#" class="discover-link">
+                <span class="discover-icon">
+                  <i class="fa fa-tags fa-2x pr-2" aria-hidden="true">
+                    </i>
+                  </span>
+                  <span class="discover-text">a type specimen book</span>
+                </a>
+              </div>
+            <div class="col">
+              <a href="#" class="discover-link">
+                <span class="discover-icon">
+                  <i class="fa fa-gift fa-2x pr-2" aria-hidden="true">
+                    </i>
+                  </span>
+                  <span class="discover-text">Lorem random text</span>
+                </a>
+              </div>
           </div>
           <div class="row mb-3">
-            <div class="col"><a href=""><span><i class="fa fa-glass fa-2x pr-2" aria-hidden="true"></i></span><span>and tustry</span></a></div>
-            <div class="col"><a href=""><span><i class="fa fa-tags fa-2x pr-2" aria-hidden="true"></i></span><span>type specimen book</span></a></div>
-            <div class="col"><a href=""><span><i class="fa fa-gift fa-2x pr-2" aria-hidden="true"></i></span><span>Lorem  simply random text</span></a></div>
+            <div class="col">
+              <a href="#" class="discover-link">
+                <span class="discover-icon">
+                  <i class="fa fa-glass fa-2x pr-2" aria-hidden="true">
+                    </i>
+                  </span>
+                  <span class="discover-text">and tustry</span>
+                </a>
+              </div>
+            <div class="col">
+              <a href="#" class="discover-link">
+                <span class="discover-icon">
+                  <i class="fa fa-tags fa-2x pr-2" aria-hidden="true">
+                    </i>
+                  </span>
+                  <span class="discover-text">type specimen book</span>
+                </a>
+              </div>
+            <div class="col">
+              <a href="#" class="discover-link">
+                <span class="discover-icon">
+                  <i class="fa fa-gift fa-2x pr-2" aria-hidden="true">
+                    </i>
+                  </span>
+                  <span class="discover-text">Lorem  simply random text</span>
+                </a>
+              </div>
           </div>
       </div>{{-- discover more section --}}
 
@@ -39,45 +113,49 @@
 
             <div class="col-sm-3">
                 <div class="card">
+                  <a href="#" class="month-product-link">
                     <img class="card-img-top" src="https://www.thewhiskyexchange.com/media/rtwe/uploads/banners/1073_Large.jpg?v=435407423148" alt="Card image cap">
                     <div class="card-body">
-                        <p class="card-text text-uppercase mb-0"><small>Lorem Ipsum is not simply random text</small></p>
+                        <p class="card-text month-product-title">Lorem Ipsum</p>
                       <h5 class="text-uppercase m-0">consectetur from a Lorem Ipsum passage and going</h5>
-                      
                     </div>
+                  </a>
                 </div> 
             </div>
 
             <div class="col-sm-3">
                 <div class="card">
+                  <a href="#" class="month-product-link">
                     <img class="card-img-top" src="https://www.thewhiskyexchange.com/media/rtwe/uploads/banners/1073_Large.jpg?v=435407423148" alt="Card image cap">
                     <div class="card-body">
-                        <p class="card-text text-uppercase mb-0"><small>Lorem Ipsum is not simply random text</small></p>
+                        <p class="card-text month-product-title">Lorem Ipsum is not simply</p>
                       <h5 class="text-uppercase m-0">consectetur from a Lorem Ipsum passage and going</h5>
-                      
                     </div>
+                  </a>
                 </div> 
             </div>
 
             <div class="col-sm-3">
                 <div class="card">
+                  <a href="#" class="month-product-link">
                     <img class="card-img-top" src="https://www.thewhiskyexchange.com/media/rtwe/uploads/banners/1073_Large.jpg?v=435407423148" alt="Card image cap">
                     <div class="card-body">
-                        <p class="card-text text-uppercase mb-0"><small>Lorem Ipsum is not simply random text</small></p>
-                      <h5 class="text-uppercase m-0">consectetur from a Lorem Ipsum passage and going</h5>
-                      
+                        <p class="card-text month-product-title">Lorem simply random text</p>
+                      <h5 class="text-uppercase m-0">consectetur from a Lorem Ipsum passage and going</h5>                      
                     </div>
+                  </a>
                 </div> 
             </div>
 
             <div class="col-sm-3">
                 <div class="card">
+                  <a href="#" class="month-product-link">
                     <img class="card-img-top" src="https://www.thewhiskyexchange.com/media/rtwe/uploads/banners/1073_Large.jpg?v=435407423148" alt="Card image cap">
                     <div class="card-body">
-                        <p class="card-text text-uppercase mb-0"><small>Lorem Ipsum is not simply random text</small></p>
+                        <p class="card-text month-product-title">simply random text</p>
                       <h5 class="text-uppercase m-0">consectetur from a Lorem Ipsum passage and going</h5>
-                      
                     </div>
+                  </a>
                 </div> 
             </div>
 
@@ -131,9 +209,9 @@
                               <div class="price text-center">
                                 @if(!empty($top_seller->discount_price))                        
                                   {{$web_setting[19]->value}}{{$top_seller->discount_price+0}}                           
-                                  <span> {{$web_setting[19]->value}}{{$top_seller->products_price+0}}</span>                          
+                                  <span> {{$web_setting[19]->value}}&nbsp;{{$top_seller->products_price+0}}</span>                          
                                   @else
-                                    {{$web_setting[19]->value}}{{$top_seller->products_price+0}} 
+                                    {{$web_setting[19]->value}}&nbsp;{{$top_seller->products_price+0}} 
                                 
                                   @endif 
                           </div>
@@ -150,9 +228,8 @@
                               </div>
                               <div class="buttons">
                                 @if(!in_array($top_seller->products_id,$result['cartArray']))
-      
                                       <button  class="btn btn-block btn-secondary cart" products_id="{{$top_seller->products_id}}">@lang('website.Add to Cart')</button>
-      
+    
                                   @else
                                       <button  class="btn btn-block btn-secondary active">@lang('website.Added')</button>
                                   @endif
@@ -169,7 +246,7 @@
 
             </div>
             <div class="d-flex justify-content-center">
-                    <a href="" class="btn btn-outline-secondary btn-lg text-uppercase">Load more <span class="ml-2"><i class="fa fa-arrow-right" aria-hidden="true"></i></span></a>
+                    <a href="" class="btn btn-outline-trending">Load more <span class="ml-2"><i class="fa fa-arrow-right" aria-hidden="true"></i></span></a>
             </div>{{-- show more trending end --}}
 
         </div>{{-- trending products end --}}

@@ -21,7 +21,7 @@
             
                 @if(count($result['commonContent']['cart'])>0)
                 
-                <div class="shopping-cart" style="pointer-events:auto !important;" aria-labelledby="dropdownMenuButton">
+                <div class="dropdown-menu dropdown-menu-left shopping-cart" style="pointer-events:auto !important;" aria-labelledby="dropdownMenuButton">
                 
                     <ul class="shopping-cart-items products_list" >
                         <?php

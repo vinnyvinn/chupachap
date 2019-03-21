@@ -7,7 +7,7 @@
           <ul class="contact-list  pl-0 mb-0">
             <li> <i class="fa fa-map-marker"></i><span><?php echo e($result['commonContent']['setting'][4]->value); ?> <?php echo e($result['commonContent']['setting'][5]->value); ?> <?php echo e($result['commonContent']['setting'][6]->value); ?>, <?php echo e($result['commonContent']['setting'][7]->value); ?> <?php echo e($result['commonContent']['setting'][8]->value); ?></span> </li>
             <li> <i class="fa fa-phone"></i><span><?php echo e($result['commonContent']['setting'][11]->value); ?></span> </li>
-            <li> <i class="fa fa-envelope"></i><span> <a href="mailto:info@chupachap.co.ke"><?php echo e($result['commonContent']['setting'][3]->value); ?></a> </span> </li>
+            <li> <i class="fa fa-envelope"></i><span> <a href="mailto:info@chupachap.co.ke" class="mail-link"><?php echo e($result['commonContent']['setting'][3]->value); ?></a> </span> </li>
       
           </ul>
         </div>
@@ -59,11 +59,11 @@
   </div>
 </footer>
 
-<div class="footer py-2">
+<div class="footer pt-2">
   <div class="container">
     <div class="row">
     	
-        <div class="col-12">
+        <div class="col-12 text-center">
             <p> © <?= now()->year ?> ChupaChap. <a href="<?php echo e(url('page?name=privacy-policy')); ?>"><?php echo app('translator')->getFromJson('website.Privacy'); ?></a> · <a href="#"><?php echo app('translator')->getFromJson('website.Terms'); ?></a> </p>
         </div>
         <div class="floating-top"><a href="#" class="fa fa-angle-up"></a></div>

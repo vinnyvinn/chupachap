@@ -20,12 +20,13 @@
 
     
           @include('common.header_five')
+          @include('common.header_two')
         	{{-- @include('common.header_two') --}}
         	
             @if(Request::path() == 'index' or Request::path() == '/')
 
 
-            <div class="container mt-3">
+            <div class="container mt-4">
               <div class="row">
                 <div class="col-sm-3">
                   <div class="row mb-2"><a href=""><img src="https://www.thewhiskyexchange.com/media/rtwe/uploads/banners/1104_Small.jpg?v=435375865856" /></a></div>
