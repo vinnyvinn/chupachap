@@ -67,5 +67,7 @@
                             <li><?php echo app('translator')->getFromJson('website.You have no items in your shopping cart'); ?></li>
                         </ul>
                 <?php endif; ?>
+
+                <div class="po-arrow-up"></div>
             </div>
                 

@@ -43,7 +43,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="menu-item-form-container mt-3 w-100">
+                                            <div class="menu-item-form-container mt-4 w-100">
                                                 <form class="my-2 my-lg-0">
                                                         <div class="input-group">
                                                                 <input type="text" class="form-control" placeholder="Search">
