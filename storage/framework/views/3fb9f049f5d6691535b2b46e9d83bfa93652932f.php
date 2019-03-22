@@ -2,6 +2,11 @@
 	<div id="header-mini">
 
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                
+                <div class="small-logo"><a class="navbar-brand" href="<?php echo e(URL::to('/')); ?>">
+                    <img src="<?php echo e(asset('images/chupa_logo.jpg')); ?>" alt="logo"/>
+                </a></div>
+
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerChupaChap" aria-controls="navbarTogglerChupaChap
                     ChupaChap" aria-expanded="false" aria-label="Toggle navigation">
                       <span class="navbar-toggler-icon"></span>
@@ -9,10 +14,9 @@
                     <div class="collapse navbar-collapse" id="navbarTogglerChupaChap">
 
                         <div class="row" style="width:100%;">
-                            <div class="col-sm-12 col-md-4 offset-md-4 text-center">
+                            <div class="col-sm-12 col-md-4 offset-md-4 text-center d-none d-md-block">
                                 <a class="navbar-brand" href="<?php echo e(URL::to('/')); ?>">
-                                    
-                                    <img src="<?php echo e(asset('images/chupa_logo.jpg')); ?>"/>
+                                    <img src="<?php echo e(asset('images/chupa_logo.jpg')); ?>" alt="logo"/>
                                 </a>
                             </div>
 
