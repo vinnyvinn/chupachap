@@ -71,21 +71,23 @@
         <li class="nav-item">
             <div class="mega-menu">
 
-                    <a class="nav-link mini-menu-link" href="<?php echo e(URL::to('/shop')); ?>?category=<?php echo e($categories_data->slug); ?>">
+                    <p class="nav-link mini-menu-link mb-0">
                         <?php echo e($categories_data->name); ?><span class="sr-only">(current)</span>
-                    </a>
+                    </p>
                     <div class="mega-menu-content">
                         <div class="container py-3">
                                 <div class="row">
                                     <div class="col-sm-12">
-                                            <h3 style="font-weight:bold;color:#561413;text-transform:uppercase;"><?php echo e($categories_data->name); ?></h3>
+                                            <h3 class="mega-menu-main-link">
+                                                <a href="<?php echo e(URL::to('/shop')); ?>?category=<?php echo e($categories_data->slug); ?>"><?php echo e($categories_data->name); ?></a>
+                                            </h3>
                                     </div>
                                         <div class="col-sm-3 icon-menga-menu">
                                                 <ul>
-                                                        <li class="active"><a href="#"><i class="fa fa-home mr-2"></i>Home </a></li>
-                                                        <li><a href="#"><i class="fa fa-glass mr-2"></i>One </a></li>
-                                                        <li><a href="#"><i class="fa fa-file-image-o mr-2"></i>Two </a></li>
-                                                        <li><a href="#"><i class="fa fa-cog mr-2"></i>Three </a></li>
+                                                    <li class="active"><a href="#"><i class="fa fa-home mr-2"></i>Home </a></li>
+                                                    <li><a href="#"><i class="fa fa-glass mr-2"></i>One </a></li>
+                                                    <li><a href="#"><i class="fa fa-file-image-o mr-2"></i>Two </a></li>
+                                                    <li><a href="#"><i class="fa fa-cog mr-2"></i>Three </a></li>
                                                 </ul>						    
                                             
                                             </div>
@@ -119,7 +121,7 @@
     </div>
 </div>
 
-<div class="container-fluid adds-header">
+<div class="container-fluid adds-header d-none d-md-block">
         <div class="">
             <div class="d-flex justify-content-center">
                 <a class="praise-link" href="#">

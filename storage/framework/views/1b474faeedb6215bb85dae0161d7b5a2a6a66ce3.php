@@ -37,12 +37,12 @@ body{
 
             <div class="container mt-4">
               <div class="row">
-                <div class="col-sm-3">
+                <div class="col-sm-3 col-md-3 d-none d-md-block">
                   <div class="row mb-2"><a href=""><img src="https://www.thewhiskyexchange.com/media/rtwe/uploads/banners/1104_Small.jpg?v=435375865856" /></a></div>
                   <div class="row"><a href=""><img src="https://www.thewhiskyexchange.com/media/rtwe/uploads/banners/1104_Small.jpg?v=435375865856" /></a></div>
                 </div>
-                <div class="col-sm-6"><a href=""><img src="https://www.thewhiskyexchange.com/media/rtwe/uploads/banners/1073_Large.jpg?v=435407423148" /></a></div>
-                <div class="col-sm-3">
+                <div class="col-sm-12 col-md-6"><a href=""><img src="https://www.thewhiskyexchange.com/media/rtwe/uploads/banners/1073_Large.jpg?v=435407423148" /></a></div>
+                <div class="col-sm-3 col-md-3 d-sm-none d-none d-md-block">
                   <div class="row mb-2"><a href=""><img src="https://www.thewhiskyexchange.com/media/rtwe/uploads/banners/1104_Small.jpg?v=435375865856" /></a></div>
                   <div class="row"><a href=""><img src="https://www.thewhiskyexchange.com/media/rtwe/uploads/banners/1104_Small.jpg?v=435375865856" /></a></div>
                 </div>
