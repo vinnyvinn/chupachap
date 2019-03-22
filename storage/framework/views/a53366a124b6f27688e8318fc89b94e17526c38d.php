@@ -57,10 +57,10 @@
                                     <p class="mb-2"><?php echo app('translator')->getFromJson('website.items'); ?>: <span><?php echo e($qunatity); ?></span></p>
                                     <p class="mb-2 mt-0"><?php echo app('translator')->getFromJson('website.SubTotal'); ?>: <span><?php echo e($web_setting[19]->value); ?> <?php echo e($total_amount); ?></span></p>
                                 </div>
-                                <div class="d-flex justify-content-around">
-                                    <a class="btn btn-primary btn-lg" href="<?php echo e(URL::to('/viewcart')); ?>"><?php echo app('translator')->getFromJson('website.View Cart'); ?></a>
-                                    <a class="btn btn-danger btn-lg" href="<?php echo e(URL::to('/checkout')); ?>"><?php echo app('translator')->getFromJson('website.Checkout'); ?></a>
-                                </div>
+                            <div class="btn-group btn-group-lg w-100">
+                                <a class="btn btn-primary" style="width:50%;" href="<?php echo e(URL::to('/viewcart')); ?>"><?php echo app('translator')->getFromJson('website.View Cart'); ?></a>
+                                <a class="btn btn-danger" style="width:50%;" href="<?php echo e(URL::to('/checkout')); ?>"><?php echo app('translator')->getFromJson('website.Checkout'); ?></a>
+                            </div>
                 
                 <?php else: ?>
                         <ul class="shopping-cart-items">

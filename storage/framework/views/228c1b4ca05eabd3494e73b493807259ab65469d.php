@@ -64,7 +64,7 @@
     <div class="row">
     	
         <div class="col-12 text-center">
-            <p> © <?= now()->year ?> ChupaChap. <a href="<?php echo e(url('page?name=privacy-policy')); ?>"><?php echo app('translator')->getFromJson('website.Privacy'); ?></a> · <a href="#"><?php echo app('translator')->getFromJson('website.Terms'); ?></a> </p>
+            <p> © <?= now()->year ?> ChupaChap. <a href="<?php echo e(url('page?name=privacy-policy')); ?>"><?php echo app('translator')->getFromJson('website.Privacy'); ?></a> · <a href="#" class="mail-link"><?php echo app('translator')->getFromJson('website.Terms'); ?></a> </p>
         </div>
         <div class="floating-top"><a href="#" class="fa fa-angle-up"></a></div>
     </div>
