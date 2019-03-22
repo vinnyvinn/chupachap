@@ -12,9 +12,9 @@
 
 <style>
 
-body{
-  /* background-image:url("<?php echo e(asset('images/backgrounds/light-brick.jpg')); ?>") */
-}
+/* body{
+  background-image:url("<?php echo e(asset('images/backgrounds/whiter_brick.jpg')); ?>")
+} */
   
 </style>
 
@@ -26,6 +26,7 @@ body{
 <?php endif; ?>
 	<!-- header -->
 
+  <div class="container-bg">
     
           
           <?php echo $__env->make('common.header_five', \Illuminate\Support\Arr::except(get_defined_vars(), array('__data', '__path')))->render(); ?>
@@ -34,9 +35,9 @@ body{
         	
             <?php if(Request::path() == 'index' or Request::path() == '/'): ?>
 
-
-            <div class="container mt-4">
-              <div class="row">
+<div class="main-wrapper">
+            <div class="container">
+              <div class="row pt-4">
                 <div class="col-sm-3 col-md-3 d-none d-md-block">
                   <div class="row mb-2"><a href=""><img src="https://www.thewhiskyexchange.com/media/rtwe/uploads/banners/1104_Small.jpg?v=435375865856" /></a></div>
                   <div class="row"><a href=""><img src="https://www.thewhiskyexchange.com/media/rtwe/uploads/banners/1104_Small.jpg?v=435375865856" /></a></div>
@@ -55,11 +56,12 @@ body{
 
 	<?php echo $__env->yieldContent('content'); ?>
 
-
+</div>
 
     <?php echo $__env->make('common.footer', \Illuminate\Support\Arr::except(get_defined_vars(), array('__data', '__path')))->render(); ?>
   <!-- all js scripts including custom js -->
 
+  </div>
 
 	<?php echo $__env->make('common.scripts', \Illuminate\Support\Arr::except(get_defined_vars(), array('__data', '__path')))->render(); ?>
 
