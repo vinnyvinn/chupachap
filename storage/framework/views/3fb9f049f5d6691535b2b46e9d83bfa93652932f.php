@@ -38,8 +38,8 @@
                                                                 <div class="menu-item-label">Currency</div>
                                                             </a>
                                                     </div>
-                                                    <div class="col-3 text-center m-0 p-0 dropleft">
-                                                            <?php echo $__env->make('cartButtonTwo', \Illuminate\Support\Arr::except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+                                                    <div class="col-3 text-center m-0 p-0 dropleft head-cart-content">
+                                                            <?php echo $__env->make('cartButton', \Illuminate\Support\Arr::except(get_defined_vars(), array('__data', '__path')))->render(); ?>
                                                     </div>
                                                 </div>
                                             </div>
