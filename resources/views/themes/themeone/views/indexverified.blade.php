@@ -22,7 +22,7 @@
       <div class="mt-5">
           <h3 class="highlight-title"><span class="text-uppercase">discover more</span></h3>
           <div class="row mb-3">
-            <div class="col">
+            <div class="col-sm-12 col-md-4">
               <a href="#" class="discover-link">
                 <span class="discover-icon">
                   <i class="fa fa-glass fa-2x pr-2" aria-hidden="true">
@@ -30,7 +30,7 @@
                   </span>
                   <span class="discover-text">and typesetting industry</span></a>
                 </div>
-            <div class="col">
+            <div class="col-sm-12 col-md-4">
               <a href="#" class="discover-link">
                 <span class="discover-icon">
                   <i class="fa fa-tags fa-2x pr-2" aria-hidden="true">
@@ -38,7 +38,7 @@
                   </span>
                   <span class="discover-text">scrambled it to make a type</span></a>
                 </div>
-            <div class="col">
+            <div class="col-sm-12 col-md-4">
               <a href="#" class="discover-link">
                 <span class="discover-icon">
                   <i class="fa fa-gift fa-2x pr-2" aria-hidden="true">
@@ -48,7 +48,7 @@
                 </div>
           </div>
           <div class="row mb-3">
-            <div class="col">
+            <div class="col-sm-12 col-md-4">
               <a href="#" class="discover-link">
                 <span class="discover-icon">
                   <i class="fa fa-glass fa-2x pr-2" aria-hidden="true">
@@ -57,7 +57,7 @@
                   <span class="discover-text">and typesetry</span>
                 </a>
               </div>
-            <div class="col">
+            <div class="col-sm-12 col-md-4">
               <a href="#" class="discover-link">
                 <span class="discover-icon">
                   <i class="fa fa-tags fa-2x pr-2" aria-hidden="true">
@@ -66,7 +66,7 @@
                   <span class="discover-text">a type specimen book</span>
                 </a>
               </div>
-            <div class="col">
+            <div class="col-sm-12 col-md-4">
               <a href="#" class="discover-link">
                 <span class="discover-icon">
                   <i class="fa fa-gift fa-2x pr-2" aria-hidden="true">
@@ -77,7 +77,7 @@
               </div>
           </div>
           <div class="row mb-3">
-            <div class="col">
+            <div class="col-sm-12 col-md-4">
               <a href="#" class="discover-link">
                 <span class="discover-icon">
                   <i class="fa fa-glass fa-2x pr-2" aria-hidden="true">
@@ -86,7 +86,7 @@
                   <span class="discover-text">and tustry</span>
                 </a>
               </div>
-            <div class="col">
+            <div class="col-sm-12 col-md-4">
               <a href="#" class="discover-link">
                 <span class="discover-icon">
                   <i class="fa fa-tags fa-2x pr-2" aria-hidden="true">
@@ -95,7 +95,7 @@
                   <span class="discover-text">type specimen book</span>
                 </a>
               </div>
-            <div class="col">
+            <div class="col-sm-12 col-md-4">
               <a href="#" class="discover-link">
                 <span class="discover-icon">
                   <i class="fa fa-gift fa-2x pr-2" aria-hidden="true">

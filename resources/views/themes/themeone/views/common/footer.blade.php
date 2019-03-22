@@ -74,7 +74,7 @@
     <div class="row">
     	
         <div class="col-12 text-center">
-            <p> © <?= now()->year ?> ChupaChap. <a href="{{ url('page?name=privacy-policy') }}">@lang('website.Privacy')</a> · <a href="#">@lang('website.Terms')</a> </p>
+            <p> © <?= now()->year ?> ChupaChap. <a href="{{ url('page?name=privacy-policy') }}">@lang('website.Privacy')</a> · <a href="#" class="mail-link">@lang('website.Terms')</a> </p>
         </div>
         <div class="floating-top"><a href="#" class="fa fa-angle-up"></a></div>
     </div>

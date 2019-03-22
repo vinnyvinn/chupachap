@@ -2,6 +2,11 @@
 	<div id="header-mini">
 
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                {{-- logo on mobile devices --}}
+                <div class="small-logo"><a class="navbar-brand" href="{{ URL::to('/')}}">
+                    <img src="{{ asset('images/chupa_logo.jpg') }}" alt="logo"/>
+                </a></div>
+
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerChupaChap" aria-controls="navbarTogglerChupaChap
                     ChupaChap" aria-expanded="false" aria-label="Toggle navigation">
                       <span class="navbar-toggler-icon"></span>
@@ -9,10 +14,9 @@
                     <div class="collapse navbar-collapse" id="navbarTogglerChupaChap">
 
                         <div class="row" style="width:100%;">
-                            <div class="col-sm-12 col-md-4 offset-md-4 text-center">
+                            <div class="col-sm-12 col-md-4 offset-md-4 text-center d-none d-md-block">
                                 <a class="navbar-brand" href="{{ URL::to('/')}}">
-                                    {{-- <img src="https://www.thewhiskyexchange.com/media/rtwe/assets/application/images/logos/logo-flat.svg" alt="ChupaChap Logo"/> --}}
-                                    <img src="{{ asset('images/chupa_logo.jpg') }}"/>
+                                    <img src="{{ asset('images/chupa_logo.jpg') }}" alt="logo"/>
                                 </a>
                             </div>{{-- logo end --}}
 
@@ -38,12 +42,12 @@
                                                                 <div class="menu-item-label">Currency</div>
                                                             </a>
                                                     </div>
-                                                    <div class="col-3 text-center m-0 p-0 dropleft">
-                                                            @include('cartButtonTwo')
+                                                    <div class="col-3 text-center m-0 p-0 dropleft head-cart-content">
+                                                            @include('cartButton')
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="menu-item-form-container mt-3 w-100">
+                                            <div class="menu-item-form-container mt-4 w-100">
                                                 <form class="my-2 my-lg-0">
                                                         <div class="input-group">
                                                                 <input type="text" class="form-control" placeholder="Search">
@@ -71,21 +75,23 @@
         <li class="nav-item">
             <div class="mega-menu">
 
-                    <a class="nav-link mini-menu-link" href="{{ URL::to('/shop')}}?category={{$categories_data->slug}}">
+                    <p class="nav-link mini-menu-link mb-0">
                         {{$categories_data->name}}<span class="sr-only">(current)</span>
-                    </a>
+                    </p>
                     <div class="mega-menu-content">
                         <div class="container py-3">
                                 <div class="row">
                                     <div class="col-sm-12">
-                                            <h3 style="font-weight:bold;color:#561413;text-transform:uppercase;">{{ $categories_data->name  }}</h3>
+                                            <h3 class="mega-menu-main-link">
+                                                <a href="{{ URL::to('/shop')}}?category={{$categories_data->slug}}">{{ $categories_data->name}}</a>
+                                            </h3>
                                     </div>
                                         <div class="col-sm-3 icon-menga-menu">
                                                 <ul>
-                                                        <li class="active"><a href="#"><i class="fa fa-home mr-2"></i>Home </a></li>
-                                                        <li><a href="#"><i class="fa fa-glass mr-2"></i>One </a></li>
-                                                        <li><a href="#"><i class="fa fa-file-image-o mr-2"></i>Two </a></li>
-                                                        <li><a href="#"><i class="fa fa-cog mr-2"></i>Three </a></li>
+                                                    <li class="active"><a href="#"><i class="fa fa-home mr-2"></i>Home </a></li>
+                                                    <li><a href="#"><i class="fa fa-glass mr-2"></i>One </a></li>
+                                                    <li><a href="#"><i class="fa fa-file-image-o mr-2"></i>Two </a></li>
+                                                    <li><a href="#"><i class="fa fa-cog mr-2"></i>Three </a></li>
                                                 </ul>						    
                                             
                                             </div>{{-- column one end --}}
@@ -119,7 +125,7 @@
     </div>
 </div>
 
-<div class="container-fluid adds-header">
+<div class="container-fluid adds-header d-none d-md-block">
         <div class="">
             <div class="d-flex justify-content-center">
                 <a class="praise-link" href="#">

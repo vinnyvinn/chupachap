@@ -2,74 +2,72 @@
                 @foreach($result['commonContent']['cart'] as $cart_data)                
                 	<?php $qunatity += $cart_data->customers_basket_quantity; ?>                    
                 @endforeach
-                
-                <a href="#" id="dropdownMenuButton" class="dropdown-toggle"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
-                    <span class="badge count">{{ $qunatity }}</span>
-                   
-                    <span uk-icon="cart"></span>
-                    <!--<img class="img-fluid" src="{{asset('').'public/images/shopping_cart.png'}}" alt="icon">-->
-                    
-                    <span class="block">
-                    	                  
-                        @if(count($result['commonContent']['cart'])>0)                        
-                            <span class="items">{{ count($result['commonContent']['cart']) }}&nbsp;@lang('website.items')</span>
-                        @else 
-                            <span class="items">(0)&nbsp;@lang('website.item')</span>
-                        @endif 
-                    </span>
+
+                <a href="#" class="menu-item-link" href="#" role="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    <div class="menu-item-icon border-left border-right">
+                        <i class="fa fa-shopping-basket fa-lg" aria-hidden="true"></i>
+                    </div>
+                    <div class="menu-item-label">
+                        @if(count($result['commonContent']['cart'])>0)
+                        {{-- <span class="items">{{ count($result['commonContent']['cart']) }}&nbsp;@lang('website.items')</span>  --}}
+                        <span class="">{{ count($result['commonContent']['cart']) }}&nbsp;@lang('website.items')</span> 
+                        @else Basket (0)
+                        @endif
+                    </div>
                 </a>
-            
+
+                <div class="dropdown-menu dropdown-cart" aria-labelledby="dropdownMenuLink">
                 @if(count($result['commonContent']['cart'])>0)
-                
-                <div class="dropdown-menu dropdown-menu-left shopping-cart" style="pointer-events:auto !important;" aria-labelledby="dropdownMenuButton">
-                
-                    <ul class="shopping-cart-items products_list" >
-                        <?php
-                            $total_amount=0;
-                            $qunatity=0;
-                        ?>
-                        @foreach($result['commonContent']['cart'] as $cart_data)
-                    
-                        <?php 
-						$total_amount += $cart_data->final_price*$cart_data->customers_basket_quantity;
-						$qunatity 	  += $cart_data->customers_basket_quantity; ?>
-                        <li>
-                        		
-                            <div class="item-thumb">
-                               
-                            	<div class="image">
-                                    <img class="img-fluid" src="{{asset('').$cart_data->image}}" alt="{{$cart_data->products_name}}"/>
-                                    
+                        <ul class="m-0 py-0 px-2" >
+                                <?php
+                                    $total_amount=0;
+                                    $qunatity=0;
+                                ?>
+                                @foreach($result['commonContent']['cart'] as $cart_data)
+                            
+                                <?php 
+                                $total_amount += $cart_data->final_price*$cart_data->customers_basket_quantity;
+                                $qunatity 	  += $cart_data->customers_basket_quantity; ?>
+
+                                <li class="mb-2"> 
+                                    <div class="d-flex justify-content-between border-bottom pb-2">
+                                        <div class="cart-img-thumb">
+                                            <img src="{{asset('').$cart_data->image}}" alt="{{$cart_data->products_name}}"/>
+                                        </div>
+
+                                        <div>
+                                            <h5 class="item-name mb-1 cart-item-color">{{$cart_data->products_name}}</h5>
+                                            <span class="text-muted">@lang('website.Qty')&nbsp;:&nbsp;{{$cart_data->customers_basket_quantity}}</span>
+                                            <span class="cart-item-color"> {{$web_setting[19]->value}} {{$cart_data->final_price*$cart_data->customers_basket_quantity}}</span>
+                                        </div>
+
+                                        <div>
+                                                <a href="javascript:void(0)" class="delete-cart-product" onClick="delete_cart_product({{$cart_data->customers_basket_id}})" data-toggle="tooltip" data-placement="right" title="remove this item from Cart">
+                                                    <i class="fa fa-trash" aria-hidden="true"></i></span>
+                                                </a>
+                                        </div>
+
+                                    </div>
+                                   </li>                                   
+
+                                @endforeach                       
+                            </ul>
+                            <div class="tt-summary">
+                                    <p class="mb-2">@lang('website.items'): <span>{{ $qunatity }}</span></p>
+                                    <p class="mb-2 mt-0">@lang('website.SubTotal'): <span>{{$web_setting[19]->value}} {{ $total_amount }}</span></p>
                                 </div>
+                            <div class="btn-group btn-group-lg w-100">
+                                <a class="btn btn-primary" style="width:50%;" href="{{ URL::to('/viewcart')}}">@lang('website.View Cart')</a>
+                                <a class="btn btn-danger" style="width:50%;" href="{{ URL::to('/checkout')}}">@lang('website.Checkout')</a>
                             </div>
-                            <div class="description">
-                                    <h4 class="item-name">{{$cart_data->products_name}}</h4>
-                                    <span class="item-quantity">@lang('website.Qty')&nbsp;:&nbsp;{{$cart_data->customers_basket_quantity}}</span>
-                                    <span class="item-price"> {{$web_setting[19]->value}} {{$cart_data->final_price*$cart_data->customers_basket_quantity}}</span>
-                               
-                            </div>
-                            <a href="javascript:void(0)" class="icon" onClick="delete_cart_product({{$cart_data->customers_basket_id}})" data-toggle="tooltip" data-placement="right" title="remove this item from Cart">
-                                    <span uk-icon="close"></span>
-                                   
-                                </a>
-                           </li>
-                        @endforeach                       
-                    </ul>
-                    <div class="tt-summary">
-                    	<p>@lang('website.items'): <span>{{ $qunatity }}</span></p>
-                      	<p>@lang('website.SubTotal'): <span>{{$web_setting[19]->value}} {{ $total_amount }}</span></p>
-                    </div>
-                    <div class="buttons">
-                        <a class="btn btn-primary" href="{{ URL::to('/viewcart')}}">@lang('website.View Cart')</a>
-                        <a class="btn btn-danger" href="{{ URL::to('/checkout')}}">@lang('website.Checkout')</a>
-                    </div>
-                </div>
                 
-				@else
-                    
-                <div class="shopping-cart shopping-cart-empty dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
-                    <ul class="shopping-cart-items">
-                        <li>@lang('website.You have no items in your shopping cart')</li>
-                    </ul>
-                </div>
+                @else
+                        <ul class="shopping-cart-items">
+                            <li>@lang('website.You have no items in your shopping cart')</li>
+                        </ul>
                 @endif
+
+                <div class="po-arrow-up"></div>
+            </div>
+                

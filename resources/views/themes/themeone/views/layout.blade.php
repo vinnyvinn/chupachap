@@ -12,9 +12,9 @@
 
 <style>
 
-body{
-  /* background-image:url("{{ asset('images/backgrounds/light-brick.jpg') }}") */
-}
+/* body{
+  background-image:url("{{ asset('images/backgrounds/whiter_brick.jpg') }}")
+} */
   
 </style>
 
@@ -26,6 +26,7 @@ body{
 @endif
 	<!-- header -->
 
+  <div class="container-bg">
     
           {{-- @include('common.header_six') --}}
           @include('common.header_five')
@@ -34,15 +35,15 @@ body{
         	
             @if(Request::path() == 'index' or Request::path() == '/')
 
-
-            <div class="container mt-4">
-              <div class="row">
-                <div class="col-sm-3">
+<div class="main-wrapper">
+            <div class="container">
+              <div class="row pt-4">
+                <div class="col-sm-3 col-md-3 d-none d-md-block">
                   <div class="row mb-2"><a href=""><img src="https://www.thewhiskyexchange.com/media/rtwe/uploads/banners/1104_Small.jpg?v=435375865856" /></a></div>
                   <div class="row"><a href=""><img src="https://www.thewhiskyexchange.com/media/rtwe/uploads/banners/1104_Small.jpg?v=435375865856" /></a></div>
                 </div>
-                <div class="col-sm-6"><a href=""><img src="https://www.thewhiskyexchange.com/media/rtwe/uploads/banners/1073_Large.jpg?v=435407423148" /></a></div>
-                <div class="col-sm-3">
+                <div class="col-sm-12 col-md-6"><a href=""><img src="https://www.thewhiskyexchange.com/media/rtwe/uploads/banners/1073_Large.jpg?v=435407423148" /></a></div>
+                <div class="col-sm-3 col-md-3 d-sm-none d-none d-md-block">
                   <div class="row mb-2"><a href=""><img src="https://www.thewhiskyexchange.com/media/rtwe/uploads/banners/1104_Small.jpg?v=435375865856" /></a></div>
                   <div class="row"><a href=""><img src="https://www.thewhiskyexchange.com/media/rtwe/uploads/banners/1104_Small.jpg?v=435375865856" /></a></div>
                 </div>
@@ -55,11 +56,12 @@ body{
 
 	@yield('content')
 
-
+</div>
 
     @include('common.footer')
   <!-- all js scripts including custom js -->
 
+  </div>{{-- container bg end --}}
 
 	@include('common.scripts')
 

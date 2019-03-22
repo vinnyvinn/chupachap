@@ -1,6 +1,15 @@
+/* home page background */
+.main-wrapper{
+    background-image:url("../images/backgrounds/whiter_brick.jpg");
+}
+
 /*----------------------------*\
 	Menu nav
 \*----------------------------*/
+
+.small-logo{
+    display: none;
+}
 
 .menu-nav .menu-header {
     display: none;
@@ -92,17 +101,25 @@
 }
 
 .menu-item-link{
-    color:#c0c0c0;
+    color:#E0b580;
     text-decoration: none;
 }
 
 .menu-item-link:hover{
-    color:#fff;
+    color:#E0b580;
     text-decoration: none;
 }
 
+.border-left, .border-right {
+    border-left: 1px solid #E0b580 !important;
+}
+
+.border-right {
+    border-right: 1px solid #E0b580 !important;
+}
+
 .menu-search-button {
-    color: #561413 !important;
+    color: #520c04 !important;
     background-color: #FFF !important;
     border-color: #FFF !important;
 }
@@ -115,13 +132,14 @@
 .mini-menu-link{
     text-decoration: none;
     text-transform: uppercase;
-    color:#561413;
+    color:#a7172a;
     display: block;
+    cursor: pointer;
 }
 
 .mini-menu-link:hover{
     color:#FFF;
-    background-color: #561413;
+    background-color: #a7172a;
 }
 
 /* mini menu mega menu */
@@ -148,7 +166,7 @@
     padding: 14px 22px;
     float: left;
     text-decoration: none;
-    color: #561413;
+    color: #a7172a;
     font-size: 16px;
     border-bottom: 1px solid gray;
     white-space: nowrap;
@@ -161,8 +179,22 @@
 }
 
 .icon-menga-menu ul li a:hover{
-    background: #561413;
+    background: #a7172a;
     color:#fff;
+}
+
+.mega-menu-main-link{
+    font-weight:bold;
+    text-transform:uppercase;
+}
+
+.mega-menu-main-link a{
+    color:#a7172a;
+}
+
+.mega-menu-main-link a:hover{
+    color:#a7172a;
+    text-decoration: none;
 }
 
 
@@ -171,7 +203,7 @@
 .praise-link{
     display: block;
     padding: 6px 15px;
-    color: #666;
+    color: #888;
     text-decoration: none;
 }
 
@@ -192,11 +224,13 @@
     overflow: hidden;
     text-align: center;
     margin-bottom: 30px;
+    font-weight: bold;
+    color:#a7172a;
 }
 
 .highlight-title:before,
 .highlight-title:after {
-    border-top: 1px solid #666;
+    border-top: 1px solid #a7172a;
     content: "";
     display: inline-block;
     height: .1em;
@@ -221,20 +255,22 @@
     box-sizing: border-box;
     padding: .5rem;
     text-decoration: none;
+    color:#520c04;
 }
 
 .discover-link:hover{
-    background: rgba(86, 20, 19, .1);
+    /* background: rgba(86, 20, 19, .1); */
+    background: rgba(82,12,4,.2);
     color:#FFF;
     text-decoration: none;
 }
 
 .discover-icon{
- color:#561413;
+ color:#520c04;
 }
 
 .discover-text{
-    color: rgba(86, 20, 19, .8);
+    color: #520c04;
     font-size: 1.1 rem;
     font-weight: 600;
 }
@@ -261,18 +297,19 @@
 
 /* trending now section */
 .btn-outline-trending {
-    color: #561413;
-    background-color: transparent;
+    color: #FFF;
+    background-color: #520c04;
     background-image: none;
-    border-color: #561413;
+    border-color: #520c04;
     text-transform: uppercase;
 }
 
 .btn-outline-trending:hover {
-    color: #FFF;
-    background-color: #561413;
+    color: #520c04;
+    /* background-color: #561413; */
+    background-color: #FFF;
     background-image: none;
-    border-color: #561413;
+    border-color: #FFF;
 }
 
 /* footer section */
@@ -296,10 +333,14 @@
    text-decoration: none;
 }
 
+.footer-content {
+    background-color: #520c04;
+}
+
 /* cart */
 
 .dropdown-cart{
-    min-width:300px;
+    min-width:340px;
     border-radius: 0;
 }
 
@@ -310,18 +351,37 @@
   overflow: hidden;
 }
 
+.dropdown-menu{
+    padding: 1rem 0 0 0;
+}
+
+.dropleft .dropdown-menu {
+    top: 0;
+    right: 100%;
+    left: auto;
+    margin-top: 4rem;
+    margin-right: -4.7rem;
+    border:none;
+}
+
 .cart-item-color{
-    color:#561413;
+    color:#c33149;
 }
 
 .delete-cart-product{
-    color:red;
+    color:#A9A9A9;
     text-decoration: none;
 }
 
-.delete-cart-product{
-    color:red;
+.delete-cart-product:hover{
+    color:#A9A9A9;
     text-decoration: none;
+}
+
+.tt-summary p {
+    color: #c33149;
+    font-weight: 600;
+    font-size: 17px;
 }
 
 .dropleft .shopping-cart{
@@ -329,3 +389,33 @@
     top:40px;
 }
 
+.po-arrow-up{
+    width: 0; 
+    height: 0; 
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 20px solid #FFF;
+    position: absolute;
+    top:-18px;
+    right:10px;
+}
+
+/* mobile devices responsiveness */
+@media (max-width: 576px) {
+
+    .small-logo{
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+
+    .small-logo a img{
+        height: 60px;
+    }
+
+    .menu-items-container{
+        padding-top:20px;
+        width: 90%;
+        float:center;
+    }
+ }
